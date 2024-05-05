@@ -1,0 +1,41 @@
+{
+  "name": "cpt-woo-integration",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/mamunur105/wp-plugin-wpebcalender-react-with-mix.git",
+  "author": "Mamunur Rashid <30565480+mamunur105@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production && npm run cleanmap",
+    "production": "mix --production",
+    "package": "npm run clean && npm run dev && npm run prod && npm run dev --package",
+    "clean": "rm -rf dist/*",
+    "cleanmap": "rm -rf assets/**/**/*.map",
+    "zip": "npm run package && npm run dev --zip"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.1.0",
+    "antd": "^5.5.0",
+    "axios": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "toastr": "^2.1.4"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "archiver": "^5.3.1",
+    "cli-color": "^2.0.3",
+    "emojic": "^1.1.17",
+    "fs-extra": "^10.1.0",
+    "laravel-mix": "^6.0.49",
+    "postcss": "^8.3.1",
+    "sass": "^1.54.0",
+    "sass-loader": "^12.1.0",
+    "wp-pot": "^1.10.2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "wpebcalender/wp-event-booking-calender",
+  "authors": [
+    {
+      "name": "WPEBCalender",
+      "email": "masudranawpexpert@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "WPEBCalender\\App\\": "app"
+    }
+  },
+  "description": ""
+}
